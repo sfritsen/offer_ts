@@ -6,10 +6,11 @@ const internet = document.querySelector("#internet");
 const tv = document.querySelector("#tv");
 // Watch the form for changes and process them
 form === null || form === void 0 ? void 0 : form.addEventListener("change", processQuote);
+// Alt form listener used by button removed
 // mybtn?.addEventListener("click", e => {
-//     handleClick()
-//     // console.log("omg why")
+//     processQuote()
 // })
+// Process each function, might refactor to above event listener
 function processQuote() {
     processInternet();
 }

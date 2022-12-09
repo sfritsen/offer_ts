@@ -13,28 +13,33 @@
 <body>
 
     <nav>GO OFFER - TYPESCRIPT</nav>
-    <div class="panel_container">
-        <form id="tool_form">
-
-            <div class="panel_left">
-                <select id="internet">
-                    <option value=""">-- Internet --</option>"
-                    <option value="internet1">Option 1</option>
-                    <option value="internet2">Option 2</option>
-                </select>
-                <select id="tv">
-                    <option value="">-- TV --</option>
-                    <option value="tv1">Option 1</option>
-                    <option value="tv2">Option 2</option>
-                </select>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 panel_left">
+                <form id="tool_form">
+                    <select id="internet">
+                        <option value=""">-- Internet --</option>"
+                        <option value="internet1">Option 1</option>
+                        <option value="internet2">Option 2</option>
+                    </select>
+                    <select id="tv">
+                        <option value="">-- TV --</option>
+                        <option value="tv1">Option 1</option>
+                        <option value="tv2">Option 2</option>
+                    </select>
+                </form>
             </div>
-            <div class="panel_right">
+            <div class="col-6 panel_right">
                 <div id="output">output</div>
             </div>
-
-        </form>
+        </div>
     </div>
     
+    <script>
+        const selectInternet = document.getElementById("internet");
+        const newOption = new Option('New Option Text','New Option Value');
+        selectInternet.add(newOption,undefined);
+    </script>
     <script src="./dest/script.js"></script>
 </body>
 </html>

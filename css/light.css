@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
+html {font-size: 14px;}
 html,
 body {
     font-family: 'Open Sans', sans-serif;
     background: #f4f4f4;
-    font-size: 16px;
-    margin: 0;
+    font-size: 1rem;
+    /* margin: 0; */
 }
 
 nav {
@@ -15,17 +16,9 @@ nav {
     padding: 16px;
 }
 
-.panel_container {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-    align-items: stretch;
-    padding: 8px 0;
-}
-
 .panel_left,
 .panel_right {
-    flex: 1;
+    /* flex: 1; */
     padding: 15px;
 }
 
@@ -35,4 +28,10 @@ nav {
 
 .panel_right {
     border-left: 1px solid lightgrey;
+}
+
+select {
+    display: block;
+    width: 100%;
+    margin-bottom: 6px;
 }

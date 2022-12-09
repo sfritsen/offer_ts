@@ -8,11 +8,12 @@ const tv = document.querySelector<HTMLSelectElement>("#tv")
 // Watch the form for changes and process them
 form?.addEventListener("change", processQuote)
 
+// Alt form listener used by button removed
 // mybtn?.addEventListener("click", e => {
-//     handleClick()
-//     // console.log("omg why")
+//     processQuote()
 // })
 
+// Process each function, might refactor to above event listener
 function processQuote() {
     processInternet()
 }
