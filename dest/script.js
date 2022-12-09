@@ -4,9 +4,10 @@
 const form = document.querySelector("tool_form");
 const internet = document.querySelector("#internet");
 const tv = document.querySelector("#tv");
+const output = document.querySelector("#output");
 // Watch the form for changes and process them
 form === null || form === void 0 ? void 0 : form.addEventListener("change", processQuote);
-// Alt form listener used by button removed
+// Alt form listener used by button thats been removed
 // mybtn?.addEventListener("click", e => {
 //     processQuote()
 // })
