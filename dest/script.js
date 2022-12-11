@@ -6,6 +6,7 @@ const form = document.getElementById("tool_form");
 const internet = document.getElementById("internet");
 // const tv = document.querySelector<HTMLSelectElement>("#tv")
 const output = document.getElementById("output");
+// const output: any = document.getElementById("output")?.innerHTML
 // Watch the form for changes and process them
 form === null || form === void 0 ? void 0 : form.addEventListener("change", processQuote);
 // Alt form listener used by button thats been removed
@@ -21,7 +22,11 @@ function processInternet() {
     if ((internet === null || internet === void 0 ? void 0 : internet.value) !== "" || (internet === null || internet === void 0 ? void 0 : internet.value) !== null) {
         // console.log(internet.value)
         const intOutput = document.createElement("p");
-        intOutput.append(output.innerHTML += internet.value);
-        output.append += intOutput;
+        intOutput.className = "error_text";
+        intOutput.innerHTML = internet.value;
+        output.appendChild(intOutput);
+        // output.textContent = intOutput
+        // output.innerHTML = intOutput
+        console.log(output.innerHTML);
     }
 }
